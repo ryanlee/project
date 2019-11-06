@@ -104,7 +104,6 @@ if __name__ == '__main__':
     m = Mail()
     m.write(html, text)
     m.attach(__file__)
-    m.send('ryan.huan.li+to@gmail.com', 'ryan.huan.li+cc@gmail.com', 'ryan.huan.li+bcc@gmail.com')
 
 else:
     pass
