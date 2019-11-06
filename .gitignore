@@ -1,0 +1,66 @@
+# later one override early lines!
+
+venv/
+__pycache__/
+*.pyc
+*.o
+*.so
+
+tmp/
+bak/
+logs/
+*.log
+*.pid
+Session.vim
+.netrwhist
+.nfs*
+outputs/
+
+# remove all ~/.*, it's just too many
+/.*
+
+/bash_completion*/
+/app-defaults/
+/TR/
+/pkg/
+/oxygen*/
+
+# except these
+!/.bash*
+!/.tcsh*
+!/.termcap
+!/.synchronicity/UserRegistry.reg
+!/.ssh/
+!/.vim/
+!/.vnc/
+!/.tmux/
+!/.tmux.conf
+!/.screen/
+!/.profile
+!/.my.cnf
+!/.mc/
+!/.ctags
+!/.git*
+
+/share/
+
+/.tmux/plugins/
+/.tmux/resurrect/
+!/.tmux/plugins/tpm/
+
+.bash_history
+
+.ssh/known_hosts
+
+/_vim/*
+!/_vim/plugged/
+
+# OS folder
+Desktop/
+Downloads/
+disable-encrypt.sh
+media/
+lab/
+
+# seperate vault
+# project/
