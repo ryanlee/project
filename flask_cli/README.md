@@ -1,4 +1,7 @@
 clean test with all these working well:
+
+item|note
+--|--
 sqlalchemy | tested against postgresql
 flask_admin |integrated into main dashboard, no need for dedicated admin hier
 adminlte | latest that working with flask_admin)
