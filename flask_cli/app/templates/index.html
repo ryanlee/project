@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {{ charts['script']|indent(4)|safe }}
+{% endblock %}
+
+{# block plugins_js %} {% endblock #}
+{# block plugins_css %} {% endblock #}
+
+{% block body %}
+<!-- bokeh chart -->
+    {{ charts['bar']|indent(4)|safe }}
+
+<!-- holoviews chart -->
+    {{ charts['hv']|indent(4)|safe }}
+
+<!-- static content -->
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>150</h3>
+
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+              <p>Bounce Rate</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>44</h3>
+
+              <p>User Registrations</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>65</h3>
+
+              <p>Unique Visitors</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+      <!-- /.row -->
+
+          <!-- TABLE: LATEST ORDERS -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Latest Orders</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <thead>
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Item</th>
+                    <th>Status</th>
+                    <th>Popularity</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR9842</a></td>
+                    <td>Call of Duty IV</td>
+                    <td><span class="label label-success">Shipped</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR1848</a></td>
+                    <td>Samsung Smart TV</td>
+                    <td><span class="label label-warning">Pending</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR7429</a></td>
+                    <td>iPhone 6 Plus</td>
+                    <td><span class="label label-danger">Delivered</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR7429</a></td>
+                    <td>Samsung Smart TV</td>
+                    <td><span class="label label-info">Processing</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR1848</a></td>
+                    <td>Samsung Smart TV</td>
+                    <td><span class="label label-warning">Pending</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR7429</a></td>
+                    <td>iPhone 6 Plus</td>
+                    <td><span class="label label-danger">Delivered</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="{{url_for('static',filename='pages/examples/invoice.html')}}">OR9842</a></td>
+                    <td>Call of Duty IV</td>
+                    <td><span class="label label-success">Shipped</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+
+{% endblock body %}
+
+    {# block page_body %}
+    <div class="container{%if config.get('FLASK_ADMIN_FLUID_LAYOUT', False) %}-fluid{% endif %}">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#admin-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          {% block brand %}
+          <a class="navbar-brand" href="{{ admin_view.admin.url }}">{{ admin_view.admin.name }}</a>
+          {% endblock %}
+        </div>
+        <!-- navbar content -->
+        <div class="collapse navbar-collapse" id="admin-navbar-collapse">
+          {% block main_menu %}
+          <ul class="nav navbar-nav">
+            {{ layout.menu() }}
+          </ul>
+          {% endblock %}
+
+          {% block menu_links %}
+          <ul class="nav navbar-nav navbar-right">
+            {{ layout.menu_links() }}
+          </ul>
+          {% endblock %}
+          {% block access_control %}
+          {% endblock %}
+        </div>
+      </nav>
+
+      {% block messages %}
+      {{ layout.messages() }}
+      {% endblock %}
+
+      {% set render_ctx = h.resolve_ctx() %}
+
+      {% block body %}{% endblock %}
+    </div>
+    {% endblock #}
