@@ -5,8 +5,9 @@ steps : [
 	step,
 	[step, step, step],
 ] 
-# use array to support order and parallel, only downside is parallel steps don't have a global name, but could be workaround using level1.level2 syntax on name?
-# OR, sharing same prefix. means parallel?
+
+use array to support order and parallel, only downside is parallel steps don't have a global name, but could be workaround using level1.level2 syntax on name?
+OR, sharing same prefix. means parallel?
 
 types: {
 	regression: {
