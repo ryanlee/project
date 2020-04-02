@@ -1,12 +1,17 @@
 import data
 app = None
 
-def create_app () :
+def create_app (debug=True) :
     from flask import Flask
     app = Flask(__name__)
 
     import config
     app.config.from_object('config')
+
+    if debug:
+        from flask_debugtoolbar import DebugToolbarExtension
+        app.debug = True
+        toolbar = DebugToolbarExtension(app)
 
     db = data.init_app(app)
 
