@@ -139,7 +139,7 @@ function nest_shrc() {
 
 function nest_vim() {
 echo "-> install all vim plugs"
-vim +PlugInstall +qall
+nvim +PlugInstall +qall
 # cp -f $T/_vim/plugged/fzf/bin/* $T/bin/ 
 }
 
