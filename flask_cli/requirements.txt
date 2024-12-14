@@ -9,7 +9,7 @@ itsdangerous==1.1.0
 Jinja2==2.10.3
 Mako==1.1.0
 MarkupSafe==1.1.1
-numpy==1.17.4
+numpy==1.22.0
 packaging==19.2
 param==1.9.2
 Pillow==6.2.1
