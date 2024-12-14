@@ -7,7 +7,7 @@ Flask-SQLAlchemy==2.4.1
 holoviews==1.12.6
 itsdangerous==1.1.0
 Jinja2==2.10.3
-Mako==1.1.0
+Mako==1.2.2
 MarkupSafe==1.1.1
 numpy==1.17.4
 packaging==19.2
